@@ -1,0 +1,97 @@
+/* début css header */
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Sacramento, Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+.head{
+    margin: 0;
+    padding: 0;
+}
+nav
+{
+    width: 100%;
+    height: 10%;
+    display: inline-flex;
+    background :#AEDEC8;
+    justify-content:space-between;
+    align-items: center;
+}
+li a
+ {
+    list-style: none;
+    font-size: 3em;
+    color: black;
+    text-decoration: none;
+}
+.bar
+{
+    display: inline-block;
+    background :#AEDEC8;
+    padding-left: 10vw;
+}
+nav img {
+    width: 200px;
+    height: 100px;
+    box-shadow: none;
+}
+.img_head {
+    width: 100%;
+    height: 10%;
+    box-shadow: none;
+}
+/* fin css header*/
+
+/* background image centre aiguilles du coeur*/
+main{
+    background-image: url(Les\ Aguilles\ Du\ Cœur\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    width: 100%;
+    height: 1000px;
+   
+}
+
+/* background image centre aiguilles du coeur*/
+
+/*debut footer*/
+
+footer >h1 {
+   
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: -0.5em;
+}
+
+footer{
+    font-family : Sacramento, Arial, Helvetica, sans-serif;
+    background-color: #aedec8;
+    text-align: center;
+    text-shadow: 0 1px 1px gray;
+    font-size: 2em;
+}
+
+.ireseaux>{
+   list-style: none;
+}
+
+.lreseaux{
+    display: inline-block;
+    padding: 25px;
+}
+
+img{
+    min-width: 2px;
+    max-height: 75px; 
+    box-shadow: 0 3px 2px gray;  
+}
+
+/*fin footer*/

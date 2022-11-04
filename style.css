@@ -4,7 +4,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,19 +12,25 @@ body {
     width: 100%;
     height: 100%;
 }
+header {
+    width: 100%;
+    height: 45vh;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
 
-.head {
-    margin: 0;
-    padding: 0;
-  
+
 }
-
+.head{
+    width: 100%;
+    height: 80%;
+}
 nav {
     width: 100%;
-    height: 10%;
+    height: 35%;
     display: inline-flex;
     background: #AEDEC8;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -56,28 +62,30 @@ nav img {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-
-
-
-
 /* fin css header*/
 
 /* background image centre aiguilles du coeur*/
 
 h1{
-
     font-size:2.2em;
     text-shadow: 0 1px 1px gray;
 }
-main {
-    background-image: url(Les\ Aguilles\ Du\ Cœur\ \(1\).png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 90%;
+section{
     width: 100%;
     height: 1000px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+main {
+    background-image: url(Les\ Aiguilles\ Du\ Cœur\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 65%;
+    width: 100%;
+    height: 100%;
 }
 
 .un {

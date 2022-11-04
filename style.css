@@ -24,7 +24,7 @@ nav {
     height: 10%;
     display: inline-flex;
     background: #AEDEC8;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 

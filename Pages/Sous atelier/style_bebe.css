@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    height: 100%;
+    width: 96%;
+    background-color: #C5DAEF;
+    margin-left: 2%;
+
+}
+
+.sect_bebe {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect_nuage{
+
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.at_bebe {
+    background-image: url(../../image/bebe.jpg);
+    width: 400px;
+    height: 235px;
+    background-size: cover;
+}
+
+div>p{
+    background-color: white;
+    font-size: 2.5vw;
+    margin-left: 15%;
+    margin-right: 27%;
+     
+}
+
+.nuage {
+    background-image: url(../../nuage2.png);
+    width: 1300px;
+    height: 650px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ @media (min-width:660px) and (max-width:960px){
+
+    div>p{
+        background-color: white;
+        font-size: 2.5vw;
+        margin-left: 15%;
+        margin-right: 27%;
+        
+         
+    }
+    .nuage {
+        background-image: url(../../nuage2.png);
+        width: 850px;
+        height: 450px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+} 
+
+@media (max-width:660px){
+
+    div>p{
+        background-color: white;
+        font-size: 2.5vw;
+        margin-left: 15%;
+        margin-right: 27%;
+        
+         
+    }
+    .nuage {
+        background-image: url(../../nuage2.png);
+        width: 500px;
+        height: 250px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+} 

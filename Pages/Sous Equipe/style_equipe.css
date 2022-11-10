@@ -109,13 +109,11 @@ main {
 }
 
 .sect_nuage {
-
     height: 70%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .sect_nuage1 {
@@ -198,7 +196,6 @@ div>p {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .nuage1 {

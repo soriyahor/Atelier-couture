@@ -140,18 +140,27 @@ h1 {
     width: 400px;
     height: 235px;
     background-size: cover;
+    border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 0 3px 2px gray;
 }
 .at_alex {
     background-image: url(../../image/Alex.webp);
     width: 400px;
     height: 235px;
     background-size: cover;
+    border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 0 3px 2px gray;
 }
 .at_charles {
     background-image: url(../../image/Charles.jpg);
     width: 400px;
     height: 235px;
     background-size: cover;
+    border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 0 3px 2px gray;
 }
 .nuage {
     width: 400px;

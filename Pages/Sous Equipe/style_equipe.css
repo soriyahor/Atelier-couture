@@ -17,7 +17,7 @@ body {
 .head {
     margin: 0;
     padding: 0;
-  
+
 }
 
 nav {
@@ -93,6 +93,10 @@ main {
     width: 96%;
     background-color: #C5DAEF;
     margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 100px;
 
 }
 
@@ -104,34 +108,85 @@ main {
     align-items: center;
 }
 
-.sect_nuage{
+.sect_nuage {
 
     height: 70%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
+.sect_nuage1 {
+
+    background-image: url(../../nuage2.png);
+    width: 1300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+
+
+}
+.sect_nuage2 {
+
+    background-image: url(../../nuage2.png);
+    width: 1300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
 h1 {
     text-align: center;
     font-size: 3em;
 }
 
-.at_equipe {
-    background-image: url(../../image/équipe.jpg);
-    width: 400px;
-    height: 235px;
-    background-size: cover;
+.agnes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
 }
 
-div>p{
-    background-color: white;
+.romain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.at_agnes {
+    background-image: url(../../image/équipe.jpg);
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    margin-right: 100px;
+    border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 0 3px 2px gray;
+}
+
+.at_romain {
+    background-image: url(../../image/équipe.jpg);
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 0 3px 2px gray;
+}
+
+div>p {
     font-size: 2.5vw;
-    margin-left: 15%;
-    margin-right: 27%;
-     
+    margin-left: 10%;
+    margin-right: 17%;
+
 }
 
 .nuage {
@@ -140,54 +195,76 @@ div>p{
     height: 650px;
     background-size: contain;
     background-repeat: no-repeat;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
- @media (min-width:660px) and (max-width:960px){
+.nuage1 {
+    background-image: url(../../nuage2.png);
+    width: 900px;
+    height: 650px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    div>p{
+}
+
+.text {
+    font-size: 2.5vw;
+    text-align: center;
+    font-size: 2.5vw;
+    margin-left: 15%;
+    margin-right: 20%;
+}
+
+@media (min-width:660px) and (max-width:960px) {
+
+    div>p {
         background-color: white;
         font-size: 2.5vw;
         margin-left: 15%;
         margin-right: 27%;
-        
-         
+
+
     }
+
     .nuage {
         background-image: url(../../nuage2.png);
         width: 850px;
         height: 450px;
         background-size: contain;
         background-repeat: no-repeat;
-        display:flex;
+        display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
-} 
+}
 
-@media (max-width:660px){
+@media (max-width:660px) {
 
-    div>p{
+    div>p {
         background-color: white;
         font-size: 2.5vw;
         margin-left: 15%;
         margin-right: 27%;
-        
-         
+
+
     }
+
     .nuage {
         background-image: url(../../nuage2.png);
         width: 500px;
         height: 250px;
         background-size: contain;
         background-repeat: no-repeat;
-        display:flex;
+        display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
-} 
+}

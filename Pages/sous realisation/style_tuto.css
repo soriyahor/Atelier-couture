@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    height: 100%;
+    width: 96%;
+    background-color: #C5DAEF;
+    margin-left: 2%;
+
+}
+
+/*titre creation */
+
+.sect_tuto {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.sect_nuage {
+    background-image: url(../../nuage2.png);
+    width: 1300px;
+    height: 650px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+.bg_tuto {
+    background-image: url(../../image/tuto.jfif);
+    width: 450px;
+    height: 270px;
+    background-size: cover;
+    border:2px solid black;
+    box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+    
+}
+
+/*fin titre creation */
+
+.tuto_at{
+    height: 70%;
+    width: 100%;
+    display: grid;
+    grid-column: 2fr;
+    grid-row: 3fr;
+    grid-template-areas: 
+    "couture bebe"
+    "tricot noel"
+    "halloween .";
+    gap:100px;
+    padding-bottom: 50px;
+    padding-left: 7%;
+}
+.couture{
+    grid-area: couture;
+    background-image:url(../../image/couture.jpg);
+    
+    border:2px solid black;
+    
+}
+.bebe{
+    grid-area: bebe;
+    background-image: url(../../image/bebe.jpg);
+    
+}
+.tricot{
+    grid-area: tricot;
+    background-image: url(../../image/tricot.jpg);
+    
+}
+.noel{
+    grid-area: noel;
+    background-image: url(../../image/noel.jpg);
+    
+}
+.halloween{
+    grid-area: halloween;
+    background-image: url(../../image/halloween.jpg);
+    
+}
+
+.bgi{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:300px;
+    width: 500px;
+    border:2px solid black;
+    box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+article{
+    display:flex;
+    flex-direction: center;
+
+}

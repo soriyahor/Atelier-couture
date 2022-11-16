@@ -25,7 +25,7 @@ main {
 }
 
 .sect_nuage {
-    background-image: url(../../nuage2.png);
+    background-image: url(../../../nuage2.png);
     width: 1300px;
     height: 650px;
     background-size: contain;
@@ -40,7 +40,7 @@ h1 {
     font-size: 3em;
 }
 .bg_patron {
-    background-image: url(../../image/patron.jpg);
+    background-image: url(../photo/patron/tamara-bellis-jYdRUFgba8k-unsplash.jpg);
     width: 450px;
     height: 270px;
     background-size: cover;
@@ -52,35 +52,12 @@ h1 {
 
 /*fin titre creation */
 
-.patron_at{
-    height: 70%;
-    width: 100%;
-    display: grid;
-    grid-column: 2fr;
-    grid-row: 3fr;
-    grid-template-areas: 
-    "robe1 jupe"
-    "tricot noel"
-    "halloween .";
-    gap:100px;
-    padding-bottom: 50px;
-    padding-left: 7%;
-}
+
 .robe1{
     grid-area: robe1;
-    background-image:url(photo/patron/tamara-bellis-mNZ-GvOQUUY-unsplash\ \(1\).jpg);
+    background-image:url(../photo/patron/jupe-en-veste-verte-plancheF.jpg);
     
     border:2px solid black;
-    
-}
-.jupe{
-    grid-area: bebe;
-    background-image: url(photo/patron/tamara-bellis-jYdRUFgba8k-unsplash.jpg);
-    
-}
-.robe2{
-    grid-area: tricot;
-    background-image: url(photo/patron/mode-vetement-pour-enfants-5-robes-qui-tournent-pour-filles-robe-plissee.jpg);
     
 }
 
@@ -88,14 +65,15 @@ h1 {
 .bgi{
     background-repeat: no-repeat;
     background-size: cover;
-    height:300px;
-    width: 500px;
+    height:900px;
+    width: 1300px;
     border:2px solid black;
     box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-bottom: 75px;
 }
 
 article{
     display:flex;
-    flex-direction: center;
+    justify-content: center;
 
 }

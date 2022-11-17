@@ -110,3 +110,30 @@ article{
 }
 
 
+@media (max-width:1200px){
+
+.sect_nuage{
+    background-image: none;
+    height: 350px;
+}
+
+.creation_at{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 2%;
+}
+main{
+    width: 100%;
+    margin-left: 0;
+}
+
+.bgi{
+    height: 200px;
+    width: 350px;
+}
+.bg_creation{
+    width: 350px;
+}
+
+}

@@ -42,7 +42,14 @@ li a {
     background: #AEDEC8;
     padding-left: 10vw;
 }
+a:hover {
+    border-color: black;
+}
 
+ul>li {
+    margin: 0 1rem;
+    overflow: hidden;
+}
 nav img {
     width: 125px;
     height: 125px;
@@ -51,7 +58,86 @@ nav img {
 }
 
 /* fin header */
+input {
+    height: 100%;
+    width: 50px;
+    cursor: pointer;
+    background-color: black;
+}
 
+#hidden {
+    display: block;
+    background-color: black;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+}
+#hidden::before,
+#hidden::after {
+    display: block;
+    background-color: black;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+}
+
+#hidden::before {
+    content: '';
+    margin-top: -7px;
+}
+
+#hidden::after {
+    content: '';
+    margin-top: 7px;
+}
+
+@media (max-width: 690px) {
+    #hidden~ul li {
+        height: 0;
+        margin: -10px;
+        padding: 0;
+        border: 0;
+    }
+    body {
+        background-color: #C5DAEF;
+    }
+    section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+#ciao {
+    display: none;
+}
+    #hidden:checked~ul li {
+        height: 5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+    }
+}
+
+@media (min-width:820px) {
+    #hidden {
+        visibility: hidden;
+    }
+    .yop {
+        display: none;
+    }
+}
 /*debut footer*/
 
 .contact {
@@ -98,6 +184,7 @@ main {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .sect_nuage {
     height: 70%;
     width: 100%;
@@ -105,6 +192,7 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 .nuage {
     background-image: url(../../nuage2.png);
     width: 350px;
@@ -115,23 +203,33 @@ main {
     justify-content: center;
     align-items: center;
 }
+div.ima {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
 section {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 2%;
 }
+
 h1 {
     text-align: center;
     font-size: 3em;
+    padding-bottom: 30px;
 }
-article {
+.ima{
     width: 600px;
+    height: 450px;
 }
-article img{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
+article img {
+    width: 650px;
+    height: 450px;
+    image-resolution: 100%;
     border-radius: 30px;
     border: 2px solid black;
     box-shadow: 0 3px 2px gray;

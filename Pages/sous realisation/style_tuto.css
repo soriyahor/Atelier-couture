@@ -57,40 +57,22 @@ h1 {
     width: 100%;
     display: grid;
     grid-column: 2fr;
-    grid-row: 3fr;
+    grid-row: 1fr;
     grid-template-areas: 
-    "couture bebe"
-    "tricot noel"
-    "halloween .";
+    "echarpe sac";
     gap:100px;
     padding-bottom: 50px;
     padding-left: 7%;
 }
-.couture{
-    grid-area: couture;
-    background-image:url(../../image/couture.jpg);
-    
+.echarpe{
+    grid-area: echarpe;
+    background-image:url(photo/tuto/tuto-echarpe-tricot-debutant-diy-alice-gerfault-une.webp);
     border:2px solid black;
     
 }
-.bebe{
-    grid-area: bebe;
-    background-image: url(../../image/bebe.jpg);
-    
-}
-.tricot{
-    grid-area: tricot;
-    background-image: url(../../image/tricot.jpg);
-    
-}
-.noel{
-    grid-area: noel;
-    background-image: url(../../image/noel.jpg);
-    
-}
-.halloween{
-    grid-area: halloween;
-    background-image: url(../../image/halloween.jpg);
+.sac{
+    grid-area: sac;
+    background-image: url(photo/tuto/38830103-33698764.jpg);
     
 }
 

@@ -14,24 +14,26 @@ body {
 }
 header {
     width: 100%;
-    height: 45vh;
-    background-color: blue;
+    height: 20%; 
+    /* 50vh */
+    background-color: #AEDEC8;
     display: flex;
     flex-direction: column;
 
 
 }
-.head{
+ .head{
     width: 100%;
     height: 80%;
-}
+ }  
 nav {
     width: 100%;
     height: 35%;
     display: inline-flex;
     background: #AEDEC8;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; 
+    box-shadow: 0 3px 2px gray;
 }
 
 li a {
@@ -46,18 +48,20 @@ li a {
     display: inline-block;
     background: #AEDEC8;
     padding-left: 10vw;
+    
 }
 
 nav img {
     width: 125px;
     height: 125px;
     box-shadow: none;
+    
 
 }
 
 .img_head {
     min-width: 100%;
-    max-height: 200px;
+    max-height: 250px;
     box-shadow: none;
     background-size: cover;
     background-repeat: no-repeat;
@@ -70,107 +74,122 @@ h1{
     font-size:2.2em;
     text-shadow: 0 1px 1px gray;
 }
-section{
+main{
     width: 100%;
-    height: 1000px;
+    height: 1200px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    margin-top: 150px;
 }
-main {
+section {
     background-image: url(Les\ Aiguilles\ Du\ Cœur\ \(1\).png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 65%;
-    width: 100%;
+    background-size: contain;
+    width:75%;
     height: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr 1.5fr 0.5fr;
+    grid-template-rows: repeat(7,1fr);
+    grid-template-areas: 
+    "un . deux ."
+    "un . deux ."
+    ". . . ."
+    ". . . ."
+    "trois . quatre ."
+    "trois . quatre ."
+    ". . . .";
+
+
 }
 
 .un {
+    grid-area: un;
+ 
+}
+
+.lien {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    width: 350px;
-    height: 500px;
-    left: 230px;
-    top: 35px;
+    justify-content: center;
+    /* margin-top: -23%; */
 }
 .crea {
-    box-sizing: border-box;
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     background-image: url(image/creation.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px solid #000000;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0 3px 2px gray;
 }
 
 .deux {
-    display: flex;
+    grid-area: deux;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    width: 350px;
-    height: 500px;
-    left: 810px;
-    top: 35px;
+    position: relative;
+    right: -30%;
+    top: -23%; */
+    
 }
 
+
+
 .tuto {
-    box-sizing: border-box;
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     background-image: url(image/tuto.jfif);
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px solid #000000;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0 3px 2px gray;
 }
 
 .quatre {
-    display: flex;
+    grid-area: quatre;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    width: 350px;
-    height: 500px;
-    left: 810px;
-    top: 550px;
+    position: relative;
+    right: -30%; */
+   
+    
 }
 .equipe {
-    box-sizing: border-box;
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     background-image: url(image/équipe.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px solid #000000;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0 3px 2px gray;
 }
 
 .trois {
-    display: flex;
+    grid-area: trois;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    width: 350px;
-    height: 500px;
-    left: 230px;
-    top: 550px;
+    position: relative;
+    left:-30%; */
+    
+   
 }
 .patron {
-    box-sizing: border-box;
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     background-image: url(image/patron.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px solid #000000;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0 3px 2px gray;
 }
 
 /* background image centre aiguilles du coeur*/

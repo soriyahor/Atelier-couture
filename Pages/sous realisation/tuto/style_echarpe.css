@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
+
+main{
+    height: 2000px;
+    width: 96%;
+    background-color: #C5DAEF;
+    margin-left: 2%;
+    
+    }
+    
+    section{
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items:center ;
+    }
+    
+div,h1{
+    text-align: center;
+}
+.page_disposition {
+
+    width: 400px;
+    height: 235px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:2px solid black;
+    box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+}
+.echarpetop{
+    background-image: url(../photo/tuto/tuto-echarpe-tricot-debutant-diy-alice-gerfault-une.webp);
+}
+.couture{
+    background-image: url(../photo/tuto/504999-tricoteraupointmousse-1-1-full-14686321.jpg);
+}
+.bebe{
+    background-image: url(../photo/tuto/apprendre-tricoter-point-mousse.jpg);
+}
+.tricot{
+    background-image: url(../photo/tuto/666913-tricoterdujacquard-3-2-full-14509483.jpg);
+}
+.evenement{
+    background-image: url(../photo/tuto/558073-tricoteruneecharpetube-2-2-full-14679575.jpg);
+}
+
+.nuage {
+    background-image: url(../../../nuage2.png);
+    width: 550px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+
+}

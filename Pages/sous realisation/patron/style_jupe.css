@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    height: 100%;
+    width: 96%;
+    background-color: #C5DAEF;
+    margin-left: 2%;
+
+}
+
+/*titre creation */
+
+.sect_patron {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.sect_nuage {
+    background-image: url(../../../nuage2.png);
+    width: 1300px;
+    height: 650px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+.bg_patron {
+    background-image: url(../photo/patron/tamara-bellis-jYdRUFgba8k-unsplash.jpg);
+    width: 450px;
+    height: 270px;
+    background-size: cover;
+    border:2px solid black;
+    box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+    
+}
+
+/*fin titre creation */
+
+
+.robe1{
+    grid-area: robe1;
+    background-image:url(../photo/patron/jupe-en-veste-verte-plancheF.jpg);
+    
+    border:2px solid black;
+    
+}
+
+
+.bgi{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:900px;
+    width: 1300px;
+    border:2px solid black;
+    box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-bottom: 75px;
+}
+
+article{
+    display:flex;
+    justify-content: center;
+
+}

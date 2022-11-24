@@ -89,8 +89,10 @@ img {
 
 /*fin footer*/
 
+/*debut main*/
+
 main{
-    height: 2000px;
+    height: 1000px;
     width: 96%;
     background-color: #C5DAEF;
     margin-left: 2%;
@@ -98,7 +100,7 @@ main{
     }
     
     section{
-        height: 20%;
+        height: 50%;
         width: 100%;
         display: flex;
         justify-content: space-around;
@@ -108,6 +110,17 @@ main{
 div,h1{
     text-align: center;
 }
+
+
+.equipe{
+
+    background-image: url(../image/équipe.jpg);
+}
+
+.membre{
+    background-image: url(../image/membre.jfif);
+}
+
 .page_disposition {
 
     width: 400px;
@@ -115,19 +128,6 @@ div,h1{
     background-size: cover;
 
 }
-.couture{
-    background-image: url(../image/couture.jpg);
-}
-.bebe{
-    background-image: url(../image/bebe.jpg);
-}
-.tricot{
-    background-image: url(../image/tricot.jpg);
-}
-.evenement{
-    background-image: url(../image/evenement.jpg);
-}
-
 .nuage {
     background-image: url(../nuage2.png);
     width: 600px;

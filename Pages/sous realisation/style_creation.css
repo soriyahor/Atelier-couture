@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    height: 100%;
+    width: 96%;
+    background-color: #C5DAEF;
+    margin-left: 2%;
+
+}
+
+/*titre creation */
+
+.sect_creation {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.sect_nuage {
+    background-image: url(../../nuage2.png);
+    width: 1300px;
+    height: 650px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+.bg_creation {
+    background-image: url(../../image/creation.jpg);
+    width: 450px;
+    height: 270px;
+    background-size: cover;
+    border:2px solid black;
+    box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+    
+}
+
+/*fin titre creation */
+
+.creation_at{
+    height: 70%;
+    width: 100%;
+    display: grid;
+    grid-column: 2fr;
+    grid-row: 3fr;
+    grid-template-areas: 
+    "couture bebe"
+    "tricot noel"
+    "halloween .";
+    gap:100px;
+    padding-bottom: 50px;
+    padding-left: 7%;
+}
+.couture{
+    grid-area: couture;
+    background-image:url(../../image/couture.jpg);
+    
+    border:2px solid black;
+    
+}
+.bebe{
+    grid-area: bebe;
+    background-image: url(../../image/bebe.jpg);
+    
+}
+.tricot{
+    grid-area: tricot;
+    background-image: url(../../image/tricot.jpg);
+    
+}
+.noel{
+    grid-area: noel;
+    background-image: url(../../image/noel.jpg);
+    
+}
+.halloween{
+    grid-area: halloween;
+    background-image: url(../../image/halloween.jpg);
+    
+}
+
+.bgi{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:300px;
+    width: 500px;
+    border:2px solid black;
+    box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+article{
+    display:flex;
+    flex-direction: center;
+
+}
+
+
+@media (max-width:1200px){
+
+.sect_nuage{
+    background-image: none;
+    height: 350px;
+}
+
+.creation_at{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 2%;
+}
+main{
+    width: 100%;
+    margin-left: 0;
+}
+
+.bgi{
+    height: 200px;
+    width: 350px;
+}
+.bg_creation{
+    width: 350px;
+}
+
+}

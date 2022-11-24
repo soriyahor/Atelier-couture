@@ -27,6 +27,7 @@ nav {
     background: #AEDEC8;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 0 3px 2px gray;
 }
 
 li a {
@@ -42,6 +43,7 @@ li a {
     background: #AEDEC8;
     padding-left: 10vw;
 }
+
 a:hover {
     border-color: black;
 }
@@ -50,9 +52,10 @@ ul>li {
     margin: 0 1rem;
     overflow: hidden;
 }
+
 nav img {
     width: 125px;
-    height: 125px;
+    height: 60px;
     box-shadow: none;
 
 }
@@ -72,9 +75,11 @@ input {
     height: 4px;
     width: 30px;
 }
+
 #hidden::before,
 #hidden::after {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: black;
     position: absolute;
     height: 4px;
@@ -101,6 +106,7 @@ input {
     body {
         background-color: #C5DAEF;
     }
+
     section {
         width: 100%;
         height: 100%;
@@ -108,18 +114,22 @@ input {
         flex-direction: column;
         justify-content: center;
     }
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-#ciao {
-    display: none;
-}
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bye {
+        display: none;
+    }
+
     #hidden:checked~ul li {
         height: 5em;
         padding: 0.5em;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
+
     ul {
         display: flex;
         flex-direction: column;
@@ -130,14 +140,6 @@ nav {
     }
 }
 
-@media (min-width:820px) {
-    #hidden {
-        visibility: hidden;
-    }
-    .yop {
-        display: none;
-    }
-}
 /*debut footer*/
 
 .contact {
@@ -203,12 +205,13 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 div.ima {
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+
 }
+
 section {
     width: 100%;
     display: flex;
@@ -222,15 +225,55 @@ h1 {
     font-size: 3em;
     padding-bottom: 30px;
 }
-.ima{
-    width: 600px;
-    height: 450px;
-}
+
 article img {
-    width: 650px;
+    width: 600px;
     height: 450px;
     image-resolution: 100%;
     border-radius: 30px;
     border: 2px solid black;
     box-shadow: 0 3px 2px gray;
+}
+
+@media (min-width:820px) {
+    #hidden {
+        visibility: hidden;
+    }
+
+    .yop {
+        display: none;
+    }
+}
+
+@media (max-width:1220px) {
+    article img {
+        width: 500px;
+        height: 350px;
+    }
+}
+
+@media (max-width:1000px) {
+    article img {
+        width: 450px;
+        height: 300px;
+    }
+}
+
+@media (max-width:820px) {
+    article img {
+        width: 350px;
+        height: 200px;
+    }
+}
+
+@media (max-width:620px) {
+    article img {
+        width: 300px;
+        height: 150px;
+    }
+}
+@media (min-width:690px) {
+    .hello {
+display: none;
+    }
 }

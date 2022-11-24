@@ -25,7 +25,7 @@ nav {
     height: 10%;
     display: inline-flex;
     background: #AEDEC8;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     box-shadow: 0 3px 2px gray;
 }
@@ -41,7 +41,7 @@ li a {
 .bar {
     display: inline-block;
     background: #AEDEC8;
-    padding-left: 10vw;
+    padding-left: 7vw;
 }
 
 a:hover {
@@ -59,23 +59,22 @@ nav img {
     box-shadow: none;
 
 }
-
 /* fin header */
-input {
-    height: 100%;
-    width: 50px;
-    cursor: pointer;
-    background-color: black;
-}
-
 #hidden {
     display: block;
     background-color: black;
     position: absolute;
+    height: 5px;
+    width: 30px;
+    cursor: pointer;
+    right: 10px;
+}
+.ligne {
+    position: absolute;
     height: 4px;
     width: 30px;
+    background-color: black;
 }
-
 #hidden::before,
 #hidden::after {
     display: flex;
@@ -85,17 +84,14 @@ input {
     height: 4px;
     width: 30px;
 }
-
 #hidden::before {
     content: '';
-    margin-top: -7px;
+    margin-top: -10px;
 }
-
 #hidden::after {
     content: '';
-    margin-top: 7px;
+    margin-top: 0px;
 }
-
 @media (max-width: 690px) {
     #hidden~ul li {
         height: 0;
@@ -117,7 +113,7 @@ input {
 
     nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .bye {
@@ -129,7 +125,9 @@ input {
         padding: 0.5em;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
-
+    ul {
+        display: none;
+    }
     ul {
         display: flex;
         flex-direction: column;

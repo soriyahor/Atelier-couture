@@ -108,6 +108,13 @@ main{
 div,h1{
     text-align: center;
 }
+
+.border_img{
+    border: 2px solid black;
+    box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
+}
+
 .page_disposition {
 
     width: 400px;
@@ -117,6 +124,7 @@ div,h1{
 }
 .couture{
     background-image: url(../image/couture.jpg);
+      
 }
 .bebe{
     background-image: url(../image/bebe.jpg);
@@ -143,4 +151,8 @@ div>p{
     font-size: 2.3vw;
     margin: 9% 27% 0 15%;
     border-radius: 40%;
+}
+.lien{
+    text-decoration: none;
+    color:black;
 }

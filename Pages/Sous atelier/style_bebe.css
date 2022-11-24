@@ -85,6 +85,10 @@ div>p{
         
     }
 } 
+.lien{
+    text-decoration: none;
+    color:black;
+}
 
 @media (max-width:660px){
 
@@ -108,3 +112,9 @@ div>p{
         
     }
 } 
+.border_img{
+    border:2px solid black;
+    box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
+
+}

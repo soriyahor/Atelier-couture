@@ -17,7 +17,7 @@ body {
 .head {
     margin: 0;
     padding: 0;
-  
+
 }
 
 nav {
@@ -91,34 +91,44 @@ img {
 
 /*debut main*/
 
-main{
+main {
     height: 1000px;
     width: 96%;
     background-color: #C5DAEF;
     margin-left: 2%;
-    
-    }
-    
-    section{
-        height: 50%;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items:center ;
-    }
-    
+
+}
+
+section {
+    height: 33%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+
+}
+
 div,h1{
     text-align: center;
 }
 
+.page_creation {
+    background-image: url(../image/creation.jpg);
 
-.equipe{
 
-    background-image: url(../image/équipe.jpg);
 }
 
-.membre{
-    background-image: url(../image/membre.jfif);
+.page_tuto {
+    background-image: url(../image/tuto.jfif);
+    display: flex;
+    justify-content: left;
+
+}
+
+.page_patron {
+    background-image: url(../image/patron.jpg);
+
+
 }
 
 .page_disposition {
@@ -128,6 +138,7 @@ div,h1{
     background-size: cover;
 
 }
+
 .nuage {
     background-image: url(../nuage2.png);
     width: 600px;

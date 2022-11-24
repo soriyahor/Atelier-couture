@@ -127,6 +127,7 @@ section {
     background-repeat: no-repeat;
     border: 1px solid #000000;
     box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
 }
 
 .deux {
@@ -150,6 +151,7 @@ section {
     background-repeat: no-repeat;
     border: 1px solid #000000;
     box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
 }
 
 .quatre {
@@ -170,6 +172,7 @@ section {
     background-repeat: no-repeat;
     border: 1px solid #000000;
     box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
 }
 
 .trois {
@@ -190,8 +193,13 @@ section {
     background-repeat: no-repeat;
     border: 1px solid #000000;
     box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
 }
 
+.lien{
+    text-decoration: none;
+    color:black;
+}
 /* background image centre aiguilles du coeur*/
 
 /*debut footer*/

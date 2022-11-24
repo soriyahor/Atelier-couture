@@ -244,29 +244,29 @@ article img {
 
 @media (max-width:1220px) {
     article img {
-        width: 500px;
-        height: 350px;
+        max-width: 500px;
+        max-height: 350px;
     }
 }
 
 @media (max-width:1000px) {
     article img {
-        width: 450px;
-        height: 300px;
+        max-width: 450px;
+        max-height: 300px;
     }
 }
 
 @media (max-width:820px) {
     article img {
-        width: 350px;
-        height: 200px;
+        max-width: 350px;
+        max-height: 200px;
     }
 }
 
 @media (max-width:620px) {
     article img {
-        width: 300px;
-        height: 150px;
+        max-width: 300px;
+        max-height: 150px;
     }
 }
 @media (min-width:690px) {

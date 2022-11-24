@@ -165,3 +165,20 @@ div>p{
     text-decoration: none;
     color:black;
 }
+
+@media (max-width:1000px){
+.nuage{
+    display: none;
+}
+div>p{
+    background-color: none;
+    font-size: 0;
+    margin: 0;
+    border-radius: 0;
+}
+main{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+}
+}

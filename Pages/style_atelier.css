@@ -81,7 +81,7 @@ footer {
     padding: 25px;
 }
 
-img {
+.lreseaux img {
     min-width: 2px;
     max-height: 75px;
     box-shadow: 0 3px 2px gray;
@@ -90,7 +90,7 @@ img {
 /*fin footer*/
 
 main{
-    height: 2000px;
+    height: 2500px;
     width: 96%;
     background-color: #C5DAEF;
     margin-left: 2%;
@@ -104,9 +104,16 @@ main{
         justify-content: space-around;
         align-items:center ;
     }
-    
-div,h1{
+
+.tplan{
+    margin-top: 70px;
+    font-size: 4em;
     text-align: center;
+}
+    
+.lien h1{
+    text-align: center;
+    font-size: 2em;
 }
 
 .border_img{
@@ -155,4 +162,59 @@ div>p{
 .lien{
     text-decoration: none;
     color:black;
+}
+
+.calendrier{
+    width: 100%;
+}
+
+@media (max-width:1100px){
+   
+    .nuage{
+        display: none;
+    }
+    div>p{
+        background-color: none;
+        font-size: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+    main{
+        display:flex;
+        flex-direction: column;
+        justify-items: center;
+        width: 100%;
+        margin-left: 0;
+}
+.page_disposition {
+
+    width: 500px;
+    height: 300px;
+
+}
+
+}
+
+@media (max-width:510px){
+    .nuage {
+        background-image: none;
+}
+.page_disposition {
+
+    width: 350px;
+    height: 300px;
+
+}
+div>p{
+    font-size: 4vw;
+    background-color: #C5DAEF;   
+}
+.tplan{
+    margin-top: 0px;
+    font-size: 2em;
+    
+}
+.plan{
+    height: 300px;
+}
 }

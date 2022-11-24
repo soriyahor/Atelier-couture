@@ -68,3 +68,65 @@ div>p{
     margin: 9% 27% 0 15%;
     border-radius: 40%;
 }
+
+.bgi{
+    border:2px solid black;
+    box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
+}
+
+
+@media (max-width:1100px){
+    .nuage{
+        background-image: none;
+        height: 350px;
+    }
+    main{
+        width: 100%;
+        margin-left: 0;
+        height: 2500px;
+        
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .bgi{
+        width: 380px;
+    }
+
+    div>p{
+        background-color: #C5DAEF;
+        font-size: 0;
+        margin: 0;
+        border-radius: 0;
+        font-size: 25px;
+    }
+    .page_disposition {
+
+        width: 500px;
+        height: 350px;
+    }
+
+}
+@media (max-width:570px){
+    div>p{
+        margin-top: 10px; 
+        margin-left: 100px;
+        font-size: 15px;
+        width: 350px;
+    }
+    
+
+    .page_disposition {
+
+        width: 350px;
+        height: 235px;
+    }
+    main{
+        height: 2000px;
+    }
+}

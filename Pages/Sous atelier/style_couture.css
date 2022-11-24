@@ -74,7 +74,7 @@ div>p{
 }
 
  @media (min-width:660px) and (max-width:960px){
-
+    
     div>p{
         background-color: white;
         font-size: 2.5vw;
@@ -97,7 +97,11 @@ div>p{
 } 
 
 @media (max-width:660px){
-
+    main{
+        width: 100%;
+        margin-left: 0;
+    
+        }
     div>p{
         background-color: white;
         font-size: 2.5vw;
@@ -118,4 +122,16 @@ div>p{
         
     }
 } 
+@media (max-width:430px){
+    .nuage {
+        background-image: none;
+}
+.couture {
+       width: 350px;
+}
+div>p{
+    font-size: 4vw;
+    background-color: #C5DAEF;   
+}
+}
 

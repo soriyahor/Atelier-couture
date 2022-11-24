@@ -116,7 +116,7 @@ article{
 }
 
 
-@media (max-width:1200px){
+@media (max-width:1250px){
 
 .sect_nuage{
     background-image: none;
@@ -135,6 +135,20 @@ main{
 }
 
 .bgi{
+    height: 300px;
+    width: 500px;
+
+}
+.bg_creation{
+    width: 500px;
+}
+
+}
+
+
+@media (max-width:600px){
+
+.bgi{
     height: 200px;
     width: 350px;
 
@@ -142,5 +156,4 @@ main{
 .bg_creation{
     width: 350px;
 }
-
 }

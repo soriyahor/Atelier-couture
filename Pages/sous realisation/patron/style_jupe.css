@@ -43,22 +43,14 @@ h1 {
     background-image: url(../photo/patron/tamara-bellis-jYdRUFgba8k-unsplash.jpg);
     width: 450px;
     height: 270px;
-    background-size: cover;
-    border:2px solid black;
-    box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
-    
-    
+    background-size: cover; 
 }
 
 /*fin titre creation */
 
 
 .robe1{
-    grid-area: robe1;
-    background-image:url(../photo/patron/jupe-en-veste-verte-plancheF.jpg);
-    
-    border:2px solid black;
-    
+    background-image:url(../photo/patron/jupe-en-veste-verte-plancheF.jpg); 
 }
 
 
@@ -67,13 +59,49 @@ h1 {
     background-size: cover;
     height:900px;
     width: 1300px;
-    border:2px solid black;
-    box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin-bottom: 75px;
 }
 
 article{
     display:flex;
     justify-content: center;
+
+}
+
+.bg{
+    border:2px solid black;
+    box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
+}
+
+@media (max-width:1100px){
+    .sect_nuage{
+        background-image: none;
+        height: 350px;
+    }
+    main{
+        width: 100%;
+        margin-left: 0;
+        
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .bgi{
+        width: 380px;
+    }
+    .bg_patron{
+        width: 380px;
+    }
+    div>p{
+        background-color: none;
+        font-size: 0;
+        margin: 0;
+        border-radius: 0;
+    }
 
 }

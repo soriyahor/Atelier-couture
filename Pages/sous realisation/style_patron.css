@@ -43,11 +43,7 @@ h1 {
     background-image: url(../../image/patron.jpg);
     width: 450px;
     height: 270px;
-    background-size: cover;
-    border:2px solid black;
-    box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
-    
-    
+    background-size: cover;  
 }
 
 /*fin titre creation */
@@ -57,29 +53,26 @@ h1 {
     width: 100%;
     display: grid;
     grid-column: 2fr;
-    grid-row: 3fr;
+    grid-row: 2fr;
     grid-template-areas: 
     "robe1 jupe"
-    "tricot noel"
-    "halloween .";
+    "robe2 .";
     gap:100px;
     padding-bottom: 50px;
     padding-left: 7%;
 }
 .robe1{
     grid-area: robe1;
-    background-image:url(photo/patron/tamara-bellis-mNZ-GvOQUUY-unsplash\ \(1\).jpg);
-    
-    border:2px solid black;
-    
+    background-image:url(photo/patron/tamara-bellis-mNZ-GvOQUUY-unsplash\ \(1\).jpg);  
 }
+
 .jupe{
-    grid-area: bebe;
-    background-image: url(photo/patron/tamara-bellis-jYdRUFgba8k-unsplash.jpg);
-    
+    grid-area: jupe;
+    background-image: url(photo/patron/tamara-bellis-jYdRUFgba8k-unsplash.jpg);   
 }
+
 .robe2{
-    grid-area: tricot;
+    grid-area: robe2;
     background-image: url(photo/patron/mode-vetement-pour-enfants-5-robes-qui-tournent-pour-filles-robe-plissee.jpg);
     
 }
@@ -104,4 +97,40 @@ article{
     text-decoration: none;
     color:black;
 }
+@media (max-width:1100px){
+    .sect_nuage{
+        background-image: none;
+        height: 350px;
+    }
+    main{
+        width: 100%;
+        margin-left: 0;
+    }
+    .patron_at{
+        grid-column: 1fr;
+        grid-template-rows: 3fr;
+        grid-template-areas: 
+    "robe1" 
+    "jupe"
+    "robe2";
+    justify-content: center;
+    padding-left: 0;
 
+    }
+    .bgi{
+        width: 500px;
+    }
+
+}
+
+@media (max-width:600px){
+
+.bgi{
+    height: 200px;
+    width: 350px;
+
+}
+.bg_creation{
+    width: 350px;
+}
+}

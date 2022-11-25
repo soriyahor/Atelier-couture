@@ -180,5 +180,7 @@ main{
     display:flex;
     flex-direction: column;
     justify-items: center;
+    width: 100%;
+    margin-left: 0;
 }
 }

@@ -90,7 +90,7 @@ footer {
 /*fin footer*/
 
 main{
-    height: 2500px;
+    height: 2450px;
     width: 96%;
     background-color: #C5DAEF;
     margin-left: 2%;
@@ -106,7 +106,7 @@ main{
     }
 
 .tplan{
-    margin-top: 70px;
+    margin-top: 300px;
     font-size: 4em;
     text-align: center;
 }
@@ -164,8 +164,55 @@ div>p{
     color:black;
 }
 
+
+/* Tableau Planning */
+
+.planning-table-container {
+    margin-bottom: 200px;
+}
+
+.planning-table {
+    table-layout: fixed;
+    border: 1px solid black;
+    border-collapse: collapse;
+    min-width: 350px;
+    width: 90%;
+    margin-left:5% ;
+}
+
+td{
+    background-color: white;
+}
+.planning-table td {
+    font-weight: bold;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    text-align: center;
+    border: 2px solid black;
+    
+}
+
+.planning-table thead td,
+.planning-table .table-time {
+    text-align: start;
+    background-color: white;
+}
+
+.planning-table-couture {
+    background-color: #d9d2e9;
+}
+
+.planning-table-enfant,
+.planning-table-bebe {
+    background-color: #cfe2f3;
+}
+
+.planning-table-tricot {
+    background-color: #ead1dc;
+}
 .calendrier{
-    width: 100%;
+    display: none;
 }
 
 @media (max-width:1100px){
@@ -192,6 +239,21 @@ div>p{
     height: 300px;
 
 }
+
+}
+
+@media(max-width:620px){
+    
+    .planning-table-container{
+        display: none;
+    }
+    .calendrier{display: flex;
+    width: 100%;}
+    .tplan{
+
+        margin-top: 0px;
+    }
+
 
 }
 

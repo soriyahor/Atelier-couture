@@ -73,7 +73,7 @@ article{
     box-shadow: 0 3px 2px gray;
     border-radius: 30px;
 }
-@media (max-width:1200px){
+@media (max-width:1265px){
     .sect_nuage{
         background-image: none;
         height: 350px;

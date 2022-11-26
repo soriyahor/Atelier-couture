@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+h5{
+    display: none;
+}
 
 main {
     height: 100%;

@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+h5{
+    display: none;
+}
 
 main {
     height: 100%;
@@ -13,7 +16,7 @@ main {
 
 }
 
-.sect_bebe {
+.sect_couture {
     height: 30%;
     width: 100%;
     display: flex;
@@ -36,8 +39,8 @@ h1 {
     font-size: 3em;
 }
 
-.at_bebe {
-    background-image: url(../../image/bebe.jpg);
+.couture {
+    background-image: url(../../image/couture.jpg);
     width: 400px;
     height: 235px;
     background-size: cover;
@@ -62,9 +65,19 @@ div>p{
     align-items: center;
     
 }
+.border_img{
+    border:2px solid black;
+    box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
+
+}
+.lien{
+    text-decoration: none;
+    color:black;
+}
 
  @media (min-width:660px) and (max-width:960px){
-
+    
     div>p{
         background-color: white;
         font-size: 2.5vw;
@@ -84,20 +97,14 @@ div>p{
         align-items: center;
         
     }
-    
 } 
-.lien{
-    text-decoration: none;
-    color:black;
-}
 
 @media (max-width:660px){
-
     main{
-    width: 100%;
-    margin-left: 0;
-
-    }
+        width: 100%;
+        margin-left: 0;
+    
+        }
     div>p{
         background-color: white;
         font-size: 2.5vw;
@@ -184,23 +191,16 @@ nav{
     grid-area: burger;
 }
 } 
-.border_img{
-    border:2px solid black;
-    box-shadow: 0 3px 2px gray;
-    border-radius: 30px;
-
-}
-
 @media (max-width:430px){
     .nuage {
         background-image: none;
 }
-.at_bebe {
-    background-image: url(../../image/bebe.jpg);
-    width: 350px;
+.couture {
+       width: 350px;
 }
 div>p{
     font-size: 4vw;
     background-color: #C5DAEF;   
 }
 }
+

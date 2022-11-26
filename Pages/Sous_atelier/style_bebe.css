@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+h5{
+    display: none;
+}
 
 main {
     height: 100%;
@@ -13,7 +15,7 @@ main {
 
 }
 
-.sect_event {
+.sect_bebe {
     height: 30%;
     width: 100%;
     display: flex;
@@ -36,8 +38,8 @@ h1 {
     font-size: 3em;
 }
 
-.at_event {
-    background-image: url(../../image/evenement.jpg);
+.at_bebe {
+    background-image: url(../../image/bebe.jpg);
     width: 400px;
     height: 235px;
     background-size: cover;
@@ -62,17 +64,6 @@ div>p{
     align-items: center;
     
 }
-.border_img{
-    border:2px solid black;
-    box-shadow: 0 3px 2px gray;
-    border-radius: 30px;
-
-}
-.lien{
-    text-decoration: none;
-    color:black;
-}
-
 
  @media (min-width:660px) and (max-width:960px){
 
@@ -95,14 +86,20 @@ div>p{
         align-items: center;
         
     }
+    
 } 
+.lien{
+    text-decoration: none;
+    color:black;
+}
 
 @media (max-width:660px){
+
     main{
-        width: 100%;
-        margin-left: 0;
-    
-        }
+    width: 100%;
+    margin-left: 0;
+
+    }
     div>p{
         background-color: white;
         font-size: 2.5vw;
@@ -146,7 +143,7 @@ div>p{
     border-radius: 5px;
     background-color: black;
     position: absolute;
-    transition: all 0.5 ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .lignes:nth-child(1){
     top:0px;
@@ -174,9 +171,8 @@ transform: rotate(-135deg);
 nav{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-row: 2fr;
     grid-template-areas: "logo accueil burger"
-    ". . .";
+    ;
 }
 
 .logo{
@@ -189,11 +185,19 @@ nav{
     grid-area: burger;
 }
 } 
+.border_img{
+    border:2px solid black;
+    box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
+
+}
+
 @media (max-width:430px){
     .nuage {
         background-image: none;
 }
-.at_event {
+.at_bebe {
+    background-image: url(../../image/bebe.jpg);
     width: 350px;
 }
 div>p{

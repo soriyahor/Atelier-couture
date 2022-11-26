@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-
+h5{
+    display: none;
+}
 main {
     height: 100%;
     width: 96%;
@@ -13,7 +15,7 @@ main {
 
 }
 
-.sect_couture {
+.sect_event {
     height: 30%;
     width: 100%;
     display: flex;
@@ -36,8 +38,8 @@ h1 {
     font-size: 3em;
 }
 
-.couture {
-    background-image: url(../../image/couture.jpg);
+.at_event {
+    background-image: url(../../image/evenement.jpg);
     width: 400px;
     height: 235px;
     background-size: cover;
@@ -73,8 +75,9 @@ div>p{
     color:black;
 }
 
+
  @media (min-width:660px) and (max-width:960px){
-    
+
     div>p{
         background-color: white;
         font-size: 2.5vw;
@@ -192,12 +195,11 @@ nav{
     .nuage {
         background-image: none;
 }
-.couture {
-       width: 350px;
+.at_event {
+    width: 350px;
 }
 div>p{
     font-size: 4vw;
     background-color: #C5DAEF;   
 }
 }
-

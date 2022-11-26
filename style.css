@@ -128,6 +128,7 @@ section {
     background-repeat: no-repeat;
     border: 1px solid #000000;
     box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
 }
 
 .deux {
@@ -151,6 +152,7 @@ section {
     background-repeat: no-repeat;
     border: 1px solid #000000;
     box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
 }
 
 .quatre {
@@ -171,6 +173,7 @@ section {
     background-repeat: no-repeat;
     border: 1px solid #000000;
     box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
 }
 
 .trois {
@@ -191,46 +194,12 @@ section {
     background-repeat: no-repeat;
     border: 1px solid #000000;
     box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
 }
-@media (max-width:1000px) {
-    main {
-        width: 100%;
-        height: 2000px;
-    }
-    section {
-        background-image: none;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        width:75%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
-        grid-template-rows: repeat(12,3fr);
-        grid-template-areas: 
-        ". un un ."
-        ". un un ."
-        ". . . ."
-        ". deux deux ."
-        ". deux deux ."
-        ". . . ."
-        ". trois trois ."
-        ". trois trois ."
-        ". . . ."
-        ". quatre quatre ."
-        ". quatre quatre ."
-        ". . . .";
-    
-    
-    }
-    body{
-        background-color: #C5DAEF;
-    }
-}
-@media (min-width:690px) {
-    .hello {
-display: none;
-    }
+
+.lien{
+    text-decoration: none;
+    color:black;
 }
 /* background image centre aiguilles du coeur*/
 

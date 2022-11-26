@@ -17,13 +17,13 @@ body {
 .head {
     margin: 0;
     padding: 0;
-  
+
 }
 
 nav {
     width: 100%;
     height: 10%;
-    display: inline-flex;
+    display: flex;
     background: #AEDEC8;
     justify-content: space-around;
     align-items: center;
@@ -81,7 +81,7 @@ footer {
     padding: 25px;
 }
 
-.lreseaux img {
+img {
     min-width: 2px;
     max-height: 75px;
     box-shadow: 0 3px 2px gray;
@@ -89,37 +89,46 @@ footer {
 
 /*fin footer*/
 
-main{
-    height: 2450px;
+/*debut main*/
+
+main {
+    height: 1000px;
     width: 96%;
     background-color: #C5DAEF;
     margin-left: 2%;
-    
-    }
-    
-    section{
-        height: 20%;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items:center ;
-    }
 
-.tplan{
-    margin-top: 300px;
-    font-size: 4em;
-    text-align: center;
-}
-    
-.lien h1{
-    text-align: center;
-    font-size: 2em;
 }
 
-.border_img{
-    border: 2px solid black;
-    box-shadow: 0 3px 2px gray;
-    border-radius: 30px;
+section {
+    height: 33%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+
+}
+
+div,h1{
+    text-align: center;
+}
+
+.page_creation {
+    background-image: url(../image/creation.jpg);
+
+
+}
+
+.page_tuto {
+    background-image: url(../image/tuto.jfif);
+    display: flex;
+    justify-content: left;
+
+}
+
+.page_patron {
+    background-image: url(../image/patron.jpg);
+
+
 }
 
 .page_disposition {
@@ -128,19 +137,6 @@ main{
     height: 235px;
     background-size: cover;
 
-}
-.couture{
-    background-image: url(../image/couture.jpg);
-      
-}
-.bebe{
-    background-image: url(../image/bebe.jpg);
-}
-.tricot{
-    background-image: url(../image/tricot.jpg);
-}
-.evenement{
-    background-image: url(../image/evenement.jpg);
 }
 
 .nuage {
@@ -159,87 +155,45 @@ div>p{
     margin: 9% 27% 0 15%;
     border-radius: 40%;
 }
+
+.border_img{
+    border: 2px solid black;
+    box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
+}
 .lien{
     text-decoration: none;
     color:black;
 }
 
-
-/* Tableau Planning */
-
-.planning-table-container {
-    margin-bottom: 200px;
-}
-
-.planning-table {
-    table-layout: fixed;
-    border: 1px solid black;
-    border-collapse: collapse;
-    min-width: 350px;
-    width: 90%;
-    margin-left:5% ;
-}
-
-td{
-    background-color: white;
-}
-.planning-table td {
-    font-weight: bold;
-    font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 40px;
-    text-align: center;
-    border: 2px solid black;
-    
-}
-
-.planning-table thead td,
-.planning-table .table-time {
-    text-align: start;
-    background-color: white;
-}
-
-.planning-table-couture {
-    background-color: #d9d2e9;
-}
-
-.planning-table-enfant,
-.planning-table-bebe {
-    background-color: #cfe2f3;
-}
-
-.planning-table-tricot {
-    background-color: #ead1dc;
-}
-.calendrier{
+@media (max-width:1000px){
+.nuage{
     display: none;
 }
+div>p{
+    background-color: none;
+    font-size: 0;
+    margin: 0;
+    border-radius: 0;
+}
+main{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    margin-left: 0;
+}
 
-@media (max-width:1100px){
+  .smallScreen {
+    display:block;
+  }
+}
+@media(max-width:917px){
    
-    .nuage{
-        display: none;
-    }
-    div>p{
-        background-color: none;
-        font-size: 0;
-        margin: 0;
-        border-radius: 0;
-    }
-    main{
-        display:flex;
-        flex-direction: column;
-        justify-items: center;
-        width: 100%;
-        margin-left: 0;
-}
-.page_disposition {
-
-    width: 500px;
-    height: 300px;
-
-}
-  .box{
+      .smallScreen {
+        display:none;
+      }
+.box{
     background-color: #AEDEC8;
     position: relative;
 }
@@ -302,48 +256,6 @@ nav{
 .box{
     grid-area: burger;
 }
-.smallScreen {
-    display:none;
-  }
-}
-
-
-@media(max-width:620px){
-    
-    
-    .planning-table-container{
-        display: none;
-    }
-    .calendrier{display: flex;
-    width: 100%;}
-    .tplan{
-
-        margin-top: 0px;
-    }
-
-    
-}
-
-@media (max-width:510px){
-    .nuage {
-        background-image: none;
-}
-.page_disposition {
-
-    width: 350px;
-    height: 300px;
 
 }
-div>p{
-    font-size: 4vw;
-    background-color: #C5DAEF;   
-}
-.tplan{
-    margin-top: 0px;
-    font-size: 2em;
-    
-}
-.plan{
-    height: 300px;
-}
-}
+

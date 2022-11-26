@@ -43,11 +43,7 @@ h1 {
     background-image: url(../../image/patron.jpg);
     width: 450px;
     height: 270px;
-    background-size: cover;
-    border:2px solid black;
-    box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
-    
-    
+    background-size: cover;  
 }
 
 /*fin titre creation */
@@ -57,29 +53,26 @@ h1 {
     width: 100%;
     display: grid;
     grid-column: 2fr;
-    grid-row: 3fr;
+    grid-row: 2fr;
     grid-template-areas: 
     "robe1 jupe"
-    "tricot noel"
-    "halloween .";
+    "robe2 .";
     gap:100px;
     padding-bottom: 50px;
     padding-left: 7%;
 }
 .robe1{
     grid-area: robe1;
-    background-image:url(photo/patron/tamara-bellis-mNZ-GvOQUUY-unsplash\ \(1\).jpg);
-    
-    border:2px solid black;
-    
+    background-image:url(photo/patron/tamara-bellis-mNZ-GvOQUUY-unsplash\ \(1\).jpg);  
 }
+
 .jupe{
-    grid-area: bebe;
-    background-image: url(photo/patron/tamara-bellis-jYdRUFgba8k-unsplash.jpg);
-    
+    grid-area: jupe;
+    background-image: url(photo/patron/tamara-bellis-jYdRUFgba8k-unsplash.jpg);   
 }
+
 .robe2{
-    grid-area: tricot;
+    grid-area: robe2;
     background-image: url(photo/patron/mode-vetement-pour-enfants-5-robes-qui-tournent-pour-filles-robe-plissee.jpg);
     
 }
@@ -91,11 +84,119 @@ h1 {
     height:300px;
     width: 500px;
     border:2px solid black;
-    box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
 }
 
 article{
     display:flex;
     flex-direction: center;
 
+}
+.lien{
+    text-decoration: none;
+    color:black;
+}
+@media (max-width:1100px){
+    .sect_nuage{
+        background-image: none;
+        height: 350px;
+    }
+    main{
+        width: 100%;
+        margin-left: 0;
+    }
+    .patron_at{
+        grid-column: 1fr;
+        grid-template-rows: 3fr;
+        grid-template-areas: 
+    "robe1" 
+    "jupe"
+    "robe2";
+    justify-content: center;
+    padding-left: 0;
+
+    }
+    .bgi{
+        width: 500px;
+    }
+    .smallScreen {
+        display:none;
+      }
+    .box{
+        background-color: #AEDEC8;
+        position: relative;
+    }
+    .cont-lignes{
+        width: 60px;
+        height: 42px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+    .lignes{
+    
+        width: 100%;
+        height: 6px;
+        border-radius: 5px;
+        background-color: black;
+        position: absolute;
+        transition: all 0.5 ease-in-out;
+    }
+    .lignes:nth-child(1){
+        top:0px;
+    }
+    .lignes:nth-child(2){
+        top:18px;
+    }
+    .lignes:nth-child(3){
+        top:36px;
+    }
+    .btn1.active .lignes:nth-child(1){
+    top:18px;
+    transform: rotate(135deg);
+    }
+    
+    .btn1.active .lignes:nth-child(2){
+    opacity: 0;
+    transform: translateX(-20px);
+    }
+    .btn1.active .lignes:nth-child(3){
+    top:18px;
+    transform: rotate(-135deg);
+    }
+    
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-row: 2fr;
+        grid-template-areas: "logo accueil burger"
+        ". . .";
+    }
+    
+    .logo{
+        grid-area: logo;
+    }
+    .accu{
+        grid-area: accueil;
+    }
+    .box{
+        grid-area: burger;
+    }
+
+}
+
+@media (max-width:600px){
+
+.bgi{
+    height: 200px;
+    width: 350px;
+
+}
+.bg_creation{
+    width: 350px;
+}
 }

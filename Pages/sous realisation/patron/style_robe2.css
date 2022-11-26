@@ -44,8 +44,6 @@ h1 {
     width: 450px;
     height: 270px;
     background-size: cover;
-    border:2px solid black;
-    box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
     
     
 }
@@ -54,11 +52,8 @@ h1 {
 
 
 .robe1{
-    grid-area: robe1;
     background-image:url(../photo/patron/robe-babydoll-plancheF.jpg);
-    
-    border:2px solid black;
-    
+ 
 }
 
 
@@ -67,8 +62,6 @@ h1 {
     background-size: cover;
     height:900px;
     width: 1200px;
-    border:2px solid black;
-    box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin-bottom: 75px;
 }
 
@@ -76,4 +69,120 @@ article{
     display:flex;
     justify-content: center;
 
+}
+.bg{
+    border:2px solid black;
+    box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
+}
+
+@media (max-width:1265px){
+    .sect_nuage{
+        background-image: none;
+        height: 350px;
+    }
+    main{
+        width: 100%;
+        margin-left: 0;
+        
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .bgi{
+        width: 600px;
+    }
+    .bg_patron{
+        width: 600px;
+        height: 350px;
+    }
+    div>p{
+        background-color: none;
+        font-size: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+    .sect_nuage{
+        height: 500px;
+    }
+
+}
+
+@media (max-width:630px){
+    .bgi{
+        width: 380px;
+    }
+    .bg_patron{
+        width: 380px;
+    }
+    .smallScreen {
+        display:none;
+      }
+.box{
+    background-color: #AEDEC8;
+    position: relative;
+}
+.cont-lignes{
+    width: 60px;
+    height: 42px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.lignes{
+
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background-color: black;
+    position: absolute;
+    transition: all 0.5 ease-in-out;
+}
+.lignes:nth-child(1){
+    top:0px;
+}
+.lignes:nth-child(2){
+    top:18px;
+}
+.lignes:nth-child(3){
+    top:36px;
+}
+.btn1.active .lignes:nth-child(1){
+top:18px;
+transform: rotate(135deg);
+}
+
+.btn1.active .lignes:nth-child(2){
+opacity: 0;
+transform: translateX(-20px);
+}
+.btn1.active .lignes:nth-child(3){
+top:18px;
+transform: rotate(-135deg);
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-row: 2fr;
+    grid-template-areas: "logo accueil burger"
+    ". . .";
+}
+
+.logo{
+    grid-area: logo;
+}
+.accu{
+    grid-area: accueil;
+}
+.box{
+    grid-area: burger;
+}
 }

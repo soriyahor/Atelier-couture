@@ -193,4 +193,7 @@ h1 {
     .hello {
 display: none;
     }
+    body {
+        background-color: #C5DAEF;
+    }
 }

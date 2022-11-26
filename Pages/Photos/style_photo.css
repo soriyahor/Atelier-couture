@@ -251,22 +251,22 @@ article img {
 
 @media (max-width:1000px) {
     article img {
-        max-width: 450px;
-        max-height: 300px;
+        max-width: 400px;
+        max-height: 250px;
     }
 }
 
 @media (max-width:820px) {
     article img {
-        max-width: 350px;
-        max-height: 200px;
+        max-width: 400px;
+        max-height: 250px;
     }
 }
 
 @media (max-width:620px) {
     article img {
-        max-width: 300px;
-        max-height: 150px;
+        max-width: 400px;
+        max-height: 250px;
     }
 }
 @media (min-width:690px) {

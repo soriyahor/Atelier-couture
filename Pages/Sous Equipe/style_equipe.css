@@ -295,6 +295,9 @@ div>p {
         max-width: 300px;
         max-height: 200px;
     }
+    body {
+        background-color: #C5DAEF;
+    }
 }
 @media (min-width:690px) {
     .hello {

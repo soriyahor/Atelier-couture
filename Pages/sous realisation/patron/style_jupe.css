@@ -122,6 +122,72 @@ article{
         width: 350px;
         height: 250px;
     }
+    .smallScreen {
+        display:none;
+      }
+.box{
+    background-color: #AEDEC8;
+    position: relative;
+}
+.cont-lignes{
+    width: 60px;
+    height: 42px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.lignes{
+
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background-color: black;
+    position: absolute;
+    transition: all 0.5 ease-in-out;
+}
+.lignes:nth-child(1){
+    top:0px;
+}
+.lignes:nth-child(2){
+    top:18px;
+}
+.lignes:nth-child(3){
+    top:36px;
+}
+.btn1.active .lignes:nth-child(1){
+top:18px;
+transform: rotate(135deg);
+}
+
+.btn1.active .lignes:nth-child(2){
+opacity: 0;
+transform: translateX(-20px);
+}
+.btn1.active .lignes:nth-child(3){
+top:18px;
+transform: rotate(-135deg);
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-row: 2fr;
+    grid-template-areas: "logo accueil burger"
+    ". . .";
+}
+
+.logo{
+    grid-area: logo;
+}
+.accu{
+    grid-area: accueil;
+}
+.box{
+    grid-area: burger;
+}
 
 
 }

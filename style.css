@@ -6,7 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+h5{
+    display: none;
+}
 body {
     font-family: Sacramento, Arial, Helvetica, sans-serif;
     width: 100%;
@@ -84,7 +86,7 @@ main{
     margin-top: 150px;
 }
 section {
-    background-image: url(Les\ Aiguilles\ Du\ Cœur\ \(1\).png);
+    background-image: url(Les_Aiguilles_Du_Cœur1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -200,6 +202,110 @@ section {
 .lien{
     text-decoration: none;
     color:black;
+}
+@media (max-width:1000px) {
+    main {
+        width: 100%;
+        height: 2000px;
+    }
+    section {
+        background-image: none;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width:75%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+        grid-template-rows: repeat(12,3fr);
+        grid-template-areas: 
+        ". un un ."
+        ". un un ."
+        ". . . ."
+        ". deux deux ."
+        ". deux deux ."
+        ". . . ."
+        ". trois trois ."
+        ". trois trois ."
+        ". . . ."
+        ". quatre quatre ."
+        ". quatre quatre ."
+        ". . . .";
+    
+    
+    }
+    body{
+        background-color: #C5DAEF;
+    }
+}
+@media (max-width:690px) {
+    .box{
+        background-color: #AEDEC8;
+        position: relative;
+    }
+    .cont-lignes{
+        width: 60px;
+        height: 42px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+    .lignes{
+    
+        width: 100%;
+        height: 6px;
+        border-radius: 5px;
+        background-color: black;
+        position: absolute;
+        transition: all 0.5 ease-in-out;
+    }
+    .lignes:nth-child(1){
+        top:0px;
+    }
+    .lignes:nth-child(2){
+        top:18px;
+    }
+    .lignes:nth-child(3){
+        top:36px;
+    }
+    .btn1.active .lignes:nth-child(1){
+    top:18px;
+    transform: rotate(135deg);
+    }
+    
+    .btn1.active .lignes:nth-child(2){
+    opacity: 0;
+    transform: translateX(-20px);
+    }
+    .btn1.active .lignes:nth-child(3){
+    top:18px;
+    transform: rotate(-135deg);
+    }
+    
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-row: 2fr;
+        grid-template-areas: "logo accueil burger"
+        ". . .";
+    }
+    
+    .logo{
+        grid-area: logo;
+    }
+    .accu{
+        grid-area: accueil;
+    }
+    .box{
+        grid-area: burger;
+    }
+    
+    .smallScreen {
+        display:none;
+      }
 }
 /* background image centre aiguilles du coeur*/
 

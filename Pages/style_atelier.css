@@ -14,10 +14,14 @@ body {
     height: 100%;
 }
 
+h5 {
+    display: none;
+}
+
 .head {
     margin: 0;
     padding: 0;
-  
+
 }
 
 nav {
@@ -25,8 +29,9 @@ nav {
     height: 10%;
     display: inline-flex;
     background: #AEDEC8;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    box-shadow: 0 3px 2px gray;
 }
 
 li a {
@@ -40,12 +45,21 @@ li a {
 .bar {
     display: inline-block;
     background: #AEDEC8;
-    padding-left: 10vw;
+    padding-left: 7vw;
+}
+
+a:hover {
+    border-color: black;
+}
+
+ul>li {
+    margin: 0 1rem;
+    overflow: hidden;
 }
 
 nav img {
     width: 125px;
-    height: 125px;
+    height: 60px;
     box-shadow: none;
 
 }
@@ -89,34 +103,35 @@ footer {
 
 /*fin footer*/
 
-main{
+main {
     height: 2450px;
     width: 96%;
     background-color: #C5DAEF;
     margin-left: 2%;
-    
-    }
-    
-    section{
-        height: 20%;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items:center ;
-    }
 
-.tplan{
-    margin-top: 300px;
+}
+
+/*un soucis avec la nav bar quand on est en version desktop, les liens sont pas cliquable et je crois que ça bien de la height de la section et du margin top de .tplan. J'ai essayé d'enever les deux et ça marche, sauf que le rendu est pas tout à fait pareil que celui que t'avais prévu à la base donc je te laisse le choix ou de trouver une autre façon pour y arriver x)*/
+section {
+    /* height: 20%; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tplan {
+    /* margin-top: 300px; */
     font-size: 4em;
     text-align: center;
 }
-    
-.lien h1{
+
+.lien h1 {
     text-align: center;
     font-size: 2em;
 }
 
-.border_img{
+.border_img {
     border: 2px solid black;
     box-shadow: 0 3px 2px gray;
     border-radius: 30px;
@@ -129,17 +144,21 @@ main{
     background-size: cover;
 
 }
-.couture{
+
+.couture {
     background-image: url(../image/couture.jpg);
-      
+
 }
-.bebe{
+
+.bebe {
     background-image: url(../image/bebe.jpg);
 }
-.tricot{
+
+.tricot {
     background-image: url(../image/tricot.jpg);
 }
-.evenement{
+
+.evenement {
     background-image: url(../image/evenement.jpg);
 }
 
@@ -153,15 +172,17 @@ main{
     position: relative;
 
 }
-div>p{
+
+div>p {
     background-color: white;
     font-size: 2.3vw;
     margin: 9% 27% 0 15%;
     border-radius: 40%;
 }
-.lien{
+
+.lien {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
 
@@ -177,12 +198,13 @@ div>p{
     border-collapse: collapse;
     min-width: 350px;
     width: 90%;
-    margin-left:5% ;
+    margin-left: 5%;
 }
 
-td{
+td {
     background-color: white;
 }
+
 .planning-table td {
     font-weight: bold;
     font-size: 1em;
@@ -190,7 +212,7 @@ td{
     height: 40px;
     text-align: center;
     border: 2px solid black;
-    
+
 }
 
 .planning-table thead td,
@@ -211,139 +233,164 @@ td{
 .planning-table-tricot {
     background-color: #ead1dc;
 }
-.calendrier{
+
+.calendrier {
     display: none;
 }
 
-@media (max-width:1100px){
-   
-    .nuage{
+@media (max-width:1100px) {
+
+    .nuage {
         display: none;
     }
-    div>p{
+
+    div>p {
         background-color: none;
         font-size: 0;
         margin: 0;
         border-radius: 0;
     }
-    main{
-        display:flex;
+
+    main {
+        display: flex;
         flex-direction: column;
         justify-items: center;
         width: 100%;
         margin-left: 0;
-}
-.page_disposition {
+    }
 
-    width: 500px;
-    height: 300px;
+    .page_disposition {
 
-}
-  .box{
-    background-color: #AEDEC8;
-    position: relative;
-}
-.cont-lignes{
-    width: 60px;
-    height: 42px;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+        width: 500px;
+        height: 300px;
+
+    }
 
 }
-.lignes{
 
-    width: 100%;
-    height: 6px;
-    border-radius: 5px;
-    background-color: black;
-    position: absolute;
-    transition: all 0.5 ease-in-out;
-}
-.lignes:nth-child(1){
-    top:0px;
-}
-.lignes:nth-child(2){
-    top:18px;
-}
-.lignes:nth-child(3){
-    top:36px;
-}
-.btn1.active .lignes:nth-child(1){
-top:18px;
-transform: rotate(135deg);
-}
+@media(max-width:690px) {
+    .box {
+        background-color: #AEDEC8;
+        position: relative;
+    }
 
-.btn1.active .lignes:nth-child(2){
-opacity: 0;
-transform: translateX(-20px);
-}
-.btn1.active .lignes:nth-child(3){
-top:18px;
-transform: rotate(-135deg);
-}
+    .cont-lignes {
+        width: 60px;
+        height: 42px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-nav{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-row: 2fr;
-    grid-template-areas: "logo accueil burger"
-    ". . .";
-}
+    }
 
-.logo{
-    grid-area: logo;
-}
-.accu{
-    grid-area: accueil;
-}
-.box{
-    grid-area: burger;
-}
-.smallScreen {
-    display:none;
-  }
-}
+    .lignes {
 
+        width: 100%;
+        height: 6px;
+        border-radius: 5px;
+        background-color: black;
+        position: absolute;
+        transition: all 0.5s ease-in-out;
+    }
 
-@media(max-width:620px){
-    
-    
-    .planning-table-container{
+    .lignes:nth-child(1) {
+        top: 0px;
+    }
+
+    .lignes:nth-child(2) {
+        top: 18px;
+    }
+
+    .lignes:nth-child(3) {
+        top: 36px;
+    }
+
+    .btn1.active .lignes:nth-child(1) {
+        top: 18px;
+        transform: rotate(135deg);
+    }
+
+    .btn1.active .lignes:nth-child(2) {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    .btn1.active .lignes:nth-child(3) {
+        top: 18px;
+        transform: rotate(-135deg);
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-row: 2fr;
+        grid-template-areas: "logo accueil burger"
+            ". . .";
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .accu {
+        grid-area: accueil;
+    }
+
+    .box {
+        grid-area: burger;
+    }
+
+    .smallScreen {
         display: none;
     }
-    .calendrier{display: flex;
-    width: 100%;}
-    .tplan{
+}
+
+@media(max-width:620px) {
+
+
+    .planning-table-container {
+        display: none;
+    }
+
+    .calendrier {
+        display: flex;
+        width: 100%;
+    }
+
+    .tplan {
 
         margin-top: 0px;
     }
 
-    
+
 }
 
-@media (max-width:510px){
+@media (max-width:510px) {
     .nuage {
         background-image: none;
-}
-.page_disposition {
+    }
 
-    width: 350px;
-    height: 300px;
+    .page_disposition {
 
-}
-div>p{
-    font-size: 4vw;
-    background-color: #C5DAEF;   
-}
-.tplan{
-    margin-top: 0px;
-    font-size: 2em;
-    
-}
-.plan{
-    height: 300px;
-}
+        width: 350px;
+        height: 300px;
+
+    }
+
+    div>p {
+        font-size: 4vw;
+        background-color: #C5DAEF;
+    }
+
+    .tplan {
+        margin-top: 0px;
+        font-size: 2em;
+
+    }
+
+    .plan {
+        height: 300px;
+    }
 }

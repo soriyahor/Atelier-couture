@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+h5{
+    display: none;
+}
 
 main {
     height: 100%;
@@ -15,7 +17,7 @@ main {
 
 /*titre creation */
 
-.sect_tuto {
+.sect_patron {
     height: 30%;
     width: 100%;
     display: flex;
@@ -39,42 +41,44 @@ h1 {
     text-align: center;
     font-size: 3em;
 }
-.bg_tuto {
-    background-image: url(../../image/tuto.jfif);
+.bg_patron {
+    background-image: url(../../image/patron.jpg);
     width: 450px;
     height: 270px;
-    background-size: cover;
-    border:2px solid black;
-    box-shadow: 0 3px 2px gray;
-    
-    
+    background-size: cover;  
 }
 
 /*fin titre creation */
 
-.tuto_at{
+.patron_at{
     height: 70%;
     width: 100%;
     display: grid;
     grid-column: 2fr;
-    grid-row: 1fr;
+    grid-row: 2fr;
     grid-template-areas: 
-    "echarpe sac";
+    "robe1 jupe"
+    "robe2 .";
     gap:100px;
     padding-bottom: 50px;
     padding-left: 7%;
 }
-.echarpe{
-    grid-area: echarpe;
-    background-image:url(photo/tuto/tuto-echarpe-tricot-debutant-diy-alice-gerfault-une.webp);
-    border:2px solid black;
+.robe1{
+    grid-area: robe1;
+    background-image:url(photo/patron/tamara-bellis-mNZ-GvOQUUY-unsplash\ \(1\).jpg);  
+}
+
+.jupe{
+    grid-area: jupe;
+    background-image: url(photo/patron/tamara-bellis-jYdRUFgba8k-unsplash.jpg);   
+}
+
+.robe2{
+    grid-area: robe2;
+    background-image: url(photo/patron/mode-vetement-pour-enfants-5-robes-qui-tournent-pour-filles-robe-plissee.jpg);
     
 }
-.sac{
-    grid-area: sac;
-    background-image: url(photo/tuto/38830103-33698764.jpg);
-    
-}
+
 
 .bgi{
     background-repeat: no-repeat;
@@ -83,6 +87,7 @@ h1 {
     width: 500px;
     border:2px solid black;
     box-shadow: 0 3px 2px gray;
+    border-radius: 30px;
 }
 
 article{
@@ -90,18 +95,10 @@ article{
     flex-direction: center;
 
 }
-
-.border_img{
-    border:2px solid black;
-    box-shadow: 0 3px 2px gray;
-    border-radius: 30px;
-
-}
 .lien{
     text-decoration: none;
     color:black;
 }
-
 @media (max-width:1100px){
     .sect_nuage{
         background-image: none;
@@ -111,18 +108,19 @@ article{
         width: 100%;
         margin-left: 0;
     }
-    .tuto_at{
+    .patron_at{
         grid-column: 1fr;
-        grid-template-rows: 2fr;
+        grid-template-rows: 3fr;
         grid-template-areas: 
-    "echarpe" 
-    "sac";
+    "robe1" 
+    "jupe"
+    "robe2";
     justify-content: center;
     padding-left: 0;
 
     }
     .bgi{
-        width: 380px;
+        width: 500px;
     }
     .smallScreen {
         display:none;
@@ -148,7 +146,7 @@ article{
         border-radius: 5px;
         background-color: black;
         position: absolute;
-        transition: all 0.5 ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
     .lignes:nth-child(1){
         top:0px;
@@ -190,4 +188,17 @@ article{
     .box{
         grid-area: burger;
     }
+
+}
+
+@media (max-width:600px){
+
+.bgi{
+    height: 200px;
+    width: 350px;
+
+}
+.bg_creation{
+    width: 350px;
+}
 }

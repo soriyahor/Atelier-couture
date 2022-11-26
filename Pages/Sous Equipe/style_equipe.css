@@ -126,8 +126,6 @@ main {
     justify-content: center;
     align-items: center;
     margin-right: 100px;
-
-
 }
 .sect_nuage2 {
 
@@ -263,5 +261,46 @@ div>p {
         justify-content: center;
         align-items: center;
 
+    }
+}
+@media (max-width:1260px) {
+    .sect_nuage1, .sect_nuage2 {
+        max-width: 500px;
+        max-height: 350px;
+    }
+    .sect_nuage1, .sect_nuage2{
+        display: none;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .at_agnes{
+        margin: 0px;
+    }
+}
+
+@media (max-width:1000px) {
+    .sect_nuage1, .sect_nuage2 {
+        max-width: 300px;
+        max-height: 200px;
+    }
+    
+}
+
+@media (max-width:620px) {
+    .sect_nuage1, .sect_nuage2 {
+        max-width: 300px;
+        max-height: 200px;
+    }
+    body {
+        background-color: #C5DAEF;
+    }
+}
+@media (min-width:690px) {
+    .hello {
+display: none;
     }
 }

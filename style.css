@@ -118,6 +118,7 @@ section {
     align-items: center;
     justify-content: center;
     /* margin-top: -23%; */
+    color: black;
 }
 .crea {
     width: 100%;

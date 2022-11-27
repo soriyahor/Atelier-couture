@@ -305,6 +305,28 @@ section {
         display:none;
       }
 }
+
+@media (max-width:450px) {
+
+    .tuto{
+        width: 370px;
+        margin-left: -71px;
+    }
+    .crea{
+        width: 370px;
+        margin-left: -64px;
+    }
+    .equipe{
+        width: 370px;
+        margin-left: -71px;
+    }
+    .patron{
+        width: 370px;
+        margin-left: -71px;
+    }
+}
+
+
 /* background image centre aiguilles du coeur*/
 
 /*debut footer*/

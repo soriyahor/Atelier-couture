@@ -1,11 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-@import url("https://fonts.googleapis.com/css?family=Sacramento");
-
 /* debut header*/
 
 body {
@@ -232,7 +230,6 @@ h1 {
 article img {
     width: 600px;
     height: 450px;
-    image-resolution: 100%;
     border-radius: 30px;
     border: 2px solid black;
     box-shadow: 0 3px 2px gray;

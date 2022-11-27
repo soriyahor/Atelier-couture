@@ -59,8 +59,6 @@ h1 {
     height: 70%;
     width: 100%;
     display: grid;
-    grid-column: 2fr;
-    grid-row: 1fr;
     grid-template-areas: 
     "echarpe sac";
     gap:100px;
@@ -90,7 +88,6 @@ h1 {
 
 article{
     display:flex;
-    flex-direction: center;
 
 }
 
@@ -119,7 +116,6 @@ article{
         margin-top: 30px;
     }
     .tuto_at{
-        grid-column: 1fr;
         grid-template-rows: 2fr;
         grid-template-areas: 
     "echarpe" 

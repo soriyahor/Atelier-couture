@@ -1,10 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Sacramento");
 
 /* debut header*/
 
@@ -183,7 +183,6 @@ div>p{
     display: none;
 }
 div>p{
-    background-color: none;
     font-size: 0;
     margin: 0;
     border-radius: 0;

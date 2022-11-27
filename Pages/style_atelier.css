@@ -86,7 +86,7 @@ footer {
     font-size: 2em;
 }
 
-.ireseaux> {
+.ireseaux {
     list-style: none;
 }
 
@@ -104,10 +104,11 @@ footer {
 /*fin footer*/
 
 main {
-    height: 2450px;
+    height: 2100px;
     width: 96%;
     background-color: #C5DAEF;
     margin-left: 2%;
+    margin-top: 3px;
 
 }
 
@@ -245,7 +246,7 @@ td {
     }
 
     div>p {
-        background-color: none;
+        /* background-color: #C5DAEF; */
         font-size: 0;
         margin: 0;
         border-radius: 0;
@@ -257,6 +258,7 @@ td {
         justify-items: center;
         width: 100%;
         margin-left: 0;
+        height: 2200px;
     }
 
     .page_disposition {
@@ -272,6 +274,9 @@ td {
     .box {
         background-color: #AEDEC8;
         position: relative;
+    }
+    main{
+        height: 2200px;
     }
 
     .cont-lignes {
@@ -322,12 +327,10 @@ td {
         transform: rotate(-135deg);
     }
 
-    nav {
+    nav{
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-        grid-row: 2fr;
-        grid-template-areas: "logo accueil burger"
-            ". . .";
+        grid-template-areas: "logo accueil burger";
     }
 
     .logo {
@@ -363,7 +366,9 @@ td {
 
         margin-top: 0px;
     }
-
+    main{
+        height: 1800px;
+    }
 
 }
 

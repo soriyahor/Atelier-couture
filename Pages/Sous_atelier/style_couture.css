@@ -176,9 +176,7 @@ transform: rotate(-135deg);
 nav{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-row: 2fr;
-    grid-template-areas: "logo accueil burger"
-    ". . .";
+    grid-template-areas: "logo accueil burger";
 }
 
 .logo{

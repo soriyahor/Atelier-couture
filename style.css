@@ -242,6 +242,9 @@ section {
     body{
         background-color: #C5DAEF;
     }
+    .img_head{
+        display: none;
+    }
 }
 @media (max-width:690px) {
     .box{
@@ -309,26 +312,15 @@ section {
     .smallScreen {
         display:none;
       }
+ 
 }
 
 @media (max-width:450px) {
 
-    .tuto{
+    .tuto, .crea, .equipe, .patron{
         width: 370px;
-        margin-left: -71px;
     }
-    .crea{
-        width: 370px;
-        margin-left: -64px;
-    }
-    .equipe{
-        width: 370px;
-        margin-left: -71px;
-    }
-    .patron{
-        width: 370px;
-        margin-left: -71px;
-    }
+   
 }
 
 
